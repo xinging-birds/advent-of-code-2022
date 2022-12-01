@@ -15,11 +15,6 @@ fn main() {
         Ok(file) => file,
     };
 
-    // match file.write_all("{max}\n{sum_max_3}") {
-    //     Err(why) => panic!("Couldn't write to {display}: {why}"),
-    //     Ok(_) => println!("Successfully wrote solution to {display}"),
-    // }
-
     match write!(file, "Part 1: {}\nPart 2: {}", max, sum_max_3) {
         Err(why) => panic!("Couldn't write to {display}: {}", why),
         Ok(_) => println!("Successfully wrote solution to {}", display),
