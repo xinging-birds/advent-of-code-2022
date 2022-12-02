@@ -7,7 +7,7 @@ fn main() {
     let sum_max_3: i32 = part2();
 
     // This is basically just from Rust by Example and writes the solutions to file
-    let path = Path::new("./output/day1.txt");
+    let path = Path::new("./output/day01.txt");
     let display = path.display();
 
     let mut file = match File::create(&path) {
